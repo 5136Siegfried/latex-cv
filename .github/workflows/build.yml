@@ -22,9 +22,12 @@ jobs:
           cp cv.pdf docs/
 
       - name: Commit and push PDF
+        env:
+          TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add docs/cv.pdf
-          git commit -m "Update compiled CV"
-          git push
+          git add docs/cv.pdf || echo "Nothing to add"
+          git commit -m "Update compiled CV" || echo "Nothing to commit"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push || echo "Nothing to push"
