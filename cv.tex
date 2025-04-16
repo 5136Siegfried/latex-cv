@@ -1,0 +1,48 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=1.5cm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontawesome}
+
+\input{vars.tex}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+\renewcommand{\labelitemi}{--}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{\myname}} \\
+    \href{mailto:\mymail}{\mymail} ~|~
+    \href{https://\mygithub}{\mygithub} ~|~
+    \mylocation
+\end{center}
+
+\vspace{0.5cm}
+
+\section*{Profil}
+\myprofil
+
+\section*{Expérience}
+
+\textbf{Architecte Cloud Freelance} \hfill 2023 – aujourd’hui \\
+Travail sur des projets d’infrastructure scalable, GitOps, SRE, CI/CD.
+
+\section*{Formations}
+
+\textbf{Google Cybersecurity Professional Certificate} — Coursera \hfill 2025
+
+\section*{Compétences}
+
+\begin{itemize}[leftmargin=1.2em]
+    \item DevOps : Docker, Kubernetes, GitLab CI, Terraform
+    \item Cloud : AWS, GCP, Azure
+    \item Observabilité : Prometheus, Grafana, ELK
+    \item SecOps : Sécurité, PCA/PRA, gestion des secrets
+\end{itemize}
+
+\end{document}
