@@ -1,6 +1,6 @@
 ## 💼 Mon CV - Siegfried Sekkai
 
-Ce dépôt contient mon curriculum vitæ professionnel, rédigé en LaTeX pour garantir une mise en page propre, élégante et structurée.  
+Ce dépôt contient mon curriculum vitæ professionnel, rédigé en LaTeX pour garantir une mise en page propre, élégante et structurée.
 Le document est automatiquement compilé en PDF à chaque modification via une GitHub Action, et publié en ligne grâce à GitHub Pages.
 
 ### 📄 Aperçu
@@ -37,10 +37,24 @@ Le document est automatiquement compilé en PDF à chaque modification via une G
 
 ---
 
+### MAKE
+
+Nécessite pdflatex (via texlive, MiKTeX, etc.)
+
+```
+make         # Compile le cv.tex en cv.pdf
+make install # Installe les dépendances
+make open    # Ouvre le PDF avec ton lecteur par défaut
+make clean   # Supprime les fichiers auxiliaires
+make rebuild # Nettoie et recompile
+```
+
+---
+
 ### ✍️ Auteur
 
-**Siegfried Sekkai**  
-Ingénieur Cloud & DevOps · Secouriste · Bricoleur engagé  
+**Siegfried Sekkai**
+Ingénieur Cloud & DevOps · Secouriste · Bricoleur engagé
 🔗 [LinkedIn](#) · [MEDIUM](#) · [Site perso](#)
 
 ---
