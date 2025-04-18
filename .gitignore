@@ -4,7 +4,7 @@
 *.fdb_latexmk
 *.out
 *.log
-*.synctec.gz
+*.synctex.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

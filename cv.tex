@@ -2,57 +2,50 @@
 \usepackage[margin=2.2cm]{geometry}
 \usepackage{parskip}
 \usepackage{xcolor}
-\usepackage{fontawesome5}
+\usepackage{tgtermes}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{bookmark}
 \usepackage[hidelinks]{hyperref}
-
 \definecolor{main}{HTML}{2E2E2E}
 \definecolor{accent}{HTML}{6C757D}
 
 \pagestyle{empty}
 \renewcommand{\familydefault}{\sfdefault}
 
+\input{vars.tex}
+
 \begin{document}
 
 \begin{center}
-    {\LARGE \textbf{Siegfried Sekkai}}\\
+    {\LARGE \textbf{\myname}}\\
+    \textit{\myjob} \\
     \vspace{2mm}
-    \href{mailto:siegfried@5136.fr}{siegfried@5136.fr} \textbullet{}
-    \href{https://github.com/5136Siegfried}{github.com/5136Siegfried} \textbullet{}
-    Mérignac, France
+    \href{mailto:\mymail}{\mymail} \textbullet{}
+    \href{\mygithub}{GitHub} \textbullet{}
+    \href{\mylinkedin}{LinkedIn} \textbullet{}
+    \mylocation
 \end{center}
 
-\vspace{6mm}
+\vspace{3mm}
 
 \textbf{\textcolor{main}{Profil}}\\
-Avec 8 ans d’expérience dans le Cloud et l’international, et 1 an d’entrepreneuriat, je m’engage sur des projets IT ambitieux mêlant IaaC, QA, NoCode, scripting, DevOps et MCO. J’apporte expertise, rigueur et esprit d’équipe, avec une affinité forte pour les projets à impact et la culture du secours.
-
-\vspace{5mm}
-\textbf{\textcolor{main}{Compétences techniques}}
-
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=*, label={}]
-    \item \textbf{Cloud \& Conteneurs:} AWS (avancé), GCP, OVH, K8s, Docker
-    \item \textbf{Infra as Code:} Terraform, Ansible, Packer, Vagrant
-    \item \textbf{CI/CD:} GitLab CI, GitHub Actions, Jenkins, Maven
-    \item \textbf{Monitoring:} CloudWatch, Grafana, Prometheus, Kibana, Datadog
-    \item \textbf{QA:} JMeter, Selenium, OctoPerf, LoadRunner, ISTQB Agile
-    \item \textbf{Web:} React, ExpressJS, Shopify, Magento
-    \item \textbf{Secu \& Audit:} PRA, remédiation, sécurité physique
-    \item \textbf{NoCode:} Make (ex-Integromat), Notion, LLM prompting
-\end{itemize}
-\end{multicols}
+\mytagline
 
 \vspace{3mm}
-\textbf{\textcolor{main}{Expérience récente}}
+\textbf{\textcolor{main}{Compétences techniques}}
 
-\textbf{Architecte Cloud Freelance} \hfill \textit{2023 – aujourd’hui}\\
-Déploiement CI/CD, SRE, GitOps, infrastructure scalable. \\
-Stack : AWS, GitLab CI, Terraform, Kubernetes, Notion + Make.
+\mytechskills
+
+\vspace{3mm}
+\textbf{\textcolor{main}{Expériences professionnelles}}
+
+\myexperiences
 
 \vfill
 
-\textcolor{accent}{\small “Learn the rules like a pro, break them like an artist.”}
+\begin{center}
+    \textcolor{accent}{\small \myprofil}
+\end{center}
 
 \end{document}
