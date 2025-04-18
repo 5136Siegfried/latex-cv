@@ -1,45 +1,58 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{geometry}
-\geometry{margin=1.5cm}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol}
 \usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
 
-\input{vars.tex}
+\definecolor{main}{HTML}{2E2E2E}
+\definecolor{accent}{HTML}{6C757D}
 
-\titleformat{\section}{\Large\bfseries}{}{0em}{}
-\renewcommand{\labelitemi}{--}
+\pagestyle{empty}
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 
 \begin{center}
-    {\LARGE \textbf{\myname}} \\
-    \href{mailto:\mymail}{\mymail} ~|~
-    \href{https://\mygithub}{\mygithub} ~|~
-    \mylocation
+    {\LARGE \textbf{Siegfried Sekkai}}\\
+    \vspace{2mm}
+    \href{mailto:siegfried@5136.fr}{siegfried@5136.fr} \textbullet{}
+    \href{https://github.com/5136Siegfried}{github.com/5136Siegfried} \textbullet{}
+    Mérignac, France
 \end{center}
 
-\vspace{0.5cm}
+\vspace{6mm}
 
-\section*{Profil}
-\myprofil
+\textbf{\textcolor{main}{Profil}}\\
+Avec 8 ans d’expérience dans le Cloud et l’international, et 1 an d’entrepreneuriat, je m’engage sur des projets IT ambitieux mêlant IaaC, QA, NoCode, scripting, DevOps et MCO. J’apporte expertise, rigueur et esprit d’équipe, avec une affinité forte pour les projets à impact et la culture du secours.
 
-\section*{Compétences techniques}
-\mytechskills
+\vspace{5mm}
+\textbf{\textcolor{main}{Compétences techniques}}
 
-\section*{Expérience}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*, label={}]
+    \item \textbf{Cloud \& Conteneurs:} AWS (avancé), GCP, OVH, K8s, Docker
+    \item \textbf{Infra as Code:} Terraform, Ansible, Packer, Vagrant
+    \item \textbf{CI/CD:} GitLab CI, GitHub Actions, Jenkins, Maven
+    \item \textbf{Monitoring:} CloudWatch, Grafana, Prometheus, Kibana, Datadog
+    \item \textbf{QA:} JMeter, Selenium, OctoPerf, LoadRunner, ISTQB Agile
+    \item \textbf{Web:} React, ExpressJS, Shopify, Magento
+    \item \textbf{Secu \& Audit:} PRA, remédiation, sécurité physique
+    \item \textbf{NoCode:} Make (ex-Integromat), Notion, LLM prompting
+\end{itemize}
+\end{multicols}
 
-\textbf{Architecte Cloud Freelance} \hfill 2023 – aujourd’hui \\
-Travail sur des projets d’infrastructure scalable, GitOps, SRE, CI/CD.
+\vspace{3mm}
+\textbf{\textcolor{main}{Expérience récente}}
 
-\section*{Formations}
+\textbf{Architecte Cloud Freelance} \hfill \textit{2023 – aujourd’hui}\\
+Déploiement CI/CD, SRE, GitOps, infrastructure scalable. \\
+Stack : AWS, GitLab CI, Terraform, Kubernetes, Notion + Make.
 
-\textbf{Google Cybersecurity Professional Certificate} — Coursera \hfill 2025
+\vfill
 
-
-
+\textcolor{accent}{\small “Learn the rules like a pro, break them like an artist.”}
 
 \end{document}
